@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>개인정보처리방침 — TripCanvas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<style>
+  :root { --accent: #E8935A; --accent2: #C07820; --bg: #FDF8F0; --surface: #FFFDF8; --border: rgba(200,120,60,0.18); --text: #2A1A08; --muted: rgba(50,35,12,0.60); --teal: #2A9D8F; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Noto Sans KR', sans-serif; font-size: 15px; line-height: 1.85; }
+  header { background: linear-gradient(135deg, #FDF0E0 0%, #F5E6C8 100%); border-bottom: 1px solid var(--border); padding: 48px 24px 40px; text-align: center; }
+  .logo { font-family: 'Libre Baskerville', serif; font-size: 26px; font-weight: 700; color: var(--accent); letter-spacing: -0.5px; margin-bottom: 8px; }
+  .logo span { color: var(--accent2); }
+  header h1 { font-family: 'Libre Baskerville', serif; font-size: 20px; font-weight: 400; color: var(--text); margin-bottom: 10px; }
+  .meta { font-size: 12px; color: var(--muted); display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .container { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+  .summary-card { background: linear-gradient(135deg, rgba(232,147,90,0.08), rgba(232,147,90,0.04)); border: 1.5px solid rgba(232,147,90,0.3); border-radius: 16px; padding: 22px 24px; margin-bottom: 40px; }
+  .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .summary-item { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; background: rgba(255,255,255,0.7); border-radius: 9px; padding: 10px 12px; border: 1px solid rgba(200,120,60,0.12); }
+  section { margin-bottom: 40px; }
+  .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1.5px solid var(--border); }
+  .section-num { width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .section-header h2 { font-family: 'Libre Baskerville', serif; font-size: 17px; font-weight: 700; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 14px; background: var(--surface); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+  th { padding: 11px 14px; text-align: left; font-weight: 700; color: var(--accent2); font-size: 12px; border-bottom: 1px solid var(--border); }
+  td { padding: 10px 14px; border-bottom: 1px solid rgba(200,120,60,0.08); vertical-align: top; }
+  .info-box { background: rgba(255,255,255,0.8); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; font-size: 13.5px; line-height: 1.9; margin-bottom: 14px; }
+  .highlight-box { background: rgba(42,157,143,0.07); border: 1px solid rgba(42,157,143,0.28); border-radius: 12px; padding: 16px 20px; font-size: 13px; line-height: 1.9; }
+  .rights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .right-item { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 13px 16px; }
+  .contact-card { background: linear-gradient(135deg, rgba(232,147,90,0.07), rgba(200,120,60,0.04)); border: 1.5px solid rgba(232,147,90,0.25); border-radius: 14px; padding: 22px 24px; }
+  .contact-row { display: flex; gap: 10px; margin-bottom: 8px; font-size: 13.5px; }
+  .contact-row .label { min-width: 80px; color: var(--muted); font-size: 12px; font-weight: 700; }
+  footer { background: linear-gradient(135deg, #F5E8D0, #EDD9B8); border-top: 1px solid var(--border); padding: 28px 24px; text-align: center; font-size: 12px; color: var(--muted); line-height: 1.9; }
+  .warning-box { background: rgba(255,200,80,0.10); border: 1px dashed rgba(200,150,30,0.4); border-radius: 10px; padding: 13px 18px; font-size: 13px; margin-top: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Trip<span>Canvas</span> ✈️</div>
+  <h1>개인정보처리방침</h1>
+  <div class="meta"><span>시행일: 2026년 3월 14일</span><span>최종 수정: 2026년 3월 14일</span><span>버전 1.0</span></div>
+</header>
+<div class="container">
+  <div class="summary-card">
+    <h2>📋 한눈에 보는 개인정보 처리 요약</h2>
+    <div class="summary-grid">
+      <div class="summary-item">📧 <div><strong>수집 항목</strong>이메일, 이름, 나이, 성별, 주소, 혈액형, MBTI, 별자리</div></div>
+      <div class="summary-item">🎯 <div><strong>수집 목적</strong>AI 맞춤 여행 일정 생성 및 서비스 제공</div></div>
+      <div class="summary-item">🗓️ <div><strong>보유 기간</strong>회원 탈퇴 시까지 (탈퇴 후 즉시 삭제)</div></div>
+      <div class="summary-item">🔒 <div><strong>제3자 제공</strong>원칙적으로 제공하지 않음</div></div>
+    </div>
+  </div>
+  <section>
+    <div class="section-header"><div class="section-num">1</div><h2>수집하는 개인정보의 항목 및 수집 방법</h2></div>
+    <table><thead><tr><th>구분</th><th>수집 항목</th><th>필수/선택</th></tr></thead><tbody>
+      <tr><td><strong>회원가입 시</strong></td><td>이메일 주소, 비밀번호(암호화 저장)</td><td>필수</td></tr>
+      <tr><td><strong>프로필 정보</strong></td><td>이름(닉네임), 나이, 성별, 거주지(시/구 단위)</td><td>필수</td></tr>
+      <tr><td><strong>성향 분석 정보</strong></td><td>혈액형, MBTI, 별자리</td><td>선택</td></tr>
+      <tr><td><strong>여행 정보</strong></td><td>출발지, 목적지, 여행 날짜, 여행 스타일, 이동 수단</td><td>서비스 이용 시</td></tr>
+      <tr><td><strong>자동 수집</strong></td><td>서비스 이용 기록, 접속 로그 (Firebase 수집)</td><td>자동</td></tr>
+    </tbody></table>
+    <div class="info-box"><strong>수집 방법</strong>: 회원가입 및 서비스 이용 과정에서 이용자가 직접 입력하는 방식으로 수집합니다.</div>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">2</div><h2>개인정보의 수집 및 이용 목적</h2></div>
+    <table><thead><tr><th>이용 목적</th><th>상세 내용</th></tr></thead><tbody>
+      <tr><td><strong>AI 여행 일정 생성</strong></td><td>혈액형·MBTI·별자리 등 성향 정보를 바탕으로 맞춤형 여행 코스 및 맛집을 AI가 추천</td></tr>
+      <tr><td><strong>회원 관리</strong></td><td>회원 식별, 로그인 인증, 부정 이용 방지</td></tr>
+      <tr><td><strong>여행 기록 저장</strong></td><td>생성한 여행 일정 보관 및 불러오기 기능 제공</td></tr>
+      <tr><td><strong>커뮤니티 서비스</strong></td><td>후기 작성, 랭킹, 여행 일정 공유 (이용자 동의 하에 공개)</td></tr>
+      <tr><td><strong>서비스 개선</strong></td><td>이용 패턴 분석을 통한 서비스 품질 향상</td></tr>
+    </tbody></table>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">3</div><h2>개인정보의 보유 및 이용 기간</h2></div>
+    <div class="info-box">회원의 개인정보는 <strong>회원 탈퇴 시까지</strong> 보유하며, 탈퇴 즉시 지체 없이 파기합니다.</div>
+    <table><thead><tr><th>근거 법령</th><th>보존 항목</th><th>보존 기간</th></tr></thead><tbody>
+      <tr><td>전자상거래법</td><td>계약 또는 청약 철회에 관한 기록</td><td>5년</td></tr>
+      <tr><td>전자상거래법</td><td>소비자 불만 또는 분쟁 처리 기록</td><td>3년</td></tr>
+      <tr><td>통신비밀보호법</td><td>서비스 이용 로그 기록</td><td>3개월</td></tr>
+    </tbody></table>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">4</div><h2>개인정보의 제3자 제공</h2></div>
+    <div class="info-box">TripCanvas는 원칙적으로 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만, 이용자의 사전 동의 또는 법령에 의거한 경우에 한하여 제공할 수 있습니다.</div>
+    <div class="highlight-box"><strong>🔗 서비스 위탁 처리 현황</strong><br/>AI 일정 생성: Alibaba Cloud (Qwen AI) — 여행 일정 생성 목적에 한해 여행 정보 처리<br/>인증 및 DB: Google Firebase — 계정 인증 및 데이터 저장<br/>지도: OpenStreetMap, Leaflet.js — 위치 표시 (개인정보 전달 없음)</div>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">5</div><h2>이용자의 권리와 행사 방법</h2></div>
+    <div class="rights-grid">
+      <div class="right-item"><div>👁️</div><h4>열람권</h4><p>본인의 개인정보를 언제든지 열람할 수 있습니다.</p></div>
+      <div class="right-item"><div>✏️</div><h4>정정·삭제권</h4><p>잘못된 정보의 정정 또는 삭제를 요청할 수 있습니다.</p></div>
+      <div class="right-item"><div>⏸️</div><h4>처리 정지권</h4><p>개인정보 처리의 정지를 요구할 수 있습니다.</p></div>
+      <div class="right-item"><div>🗑️</div><h4>삭제·탈퇴권</h4><p>회원 탈퇴 시 모든 개인정보를 즉시 삭제합니다.</p></div>
+    </div>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">6</div><h2>개인정보의 파기 절차 및 방법</h2></div>
+    <div class="info-box">전자적 파일은 복구 불가능한 방법으로 영구 삭제하며, 이용 목적 달성 후 지체 없이 파기합니다.</div>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">7</div><h2>쿠키(Cookie) 및 자동 수집 장치</h2></div>
+    <div class="info-box">로그인 상태 유지를 위해 <strong>localStorage</strong>에 최소한의 정보(최근 로그인 이메일)를 저장합니다. 브라우저 설정으로 삭제 가능합니다.</div>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">8</div><h2>개인정보의 안전성 확보 조치</h2></div>
+    <table><thead><tr><th>조치 항목</th><th>내용</th></tr></thead><tbody>
+      <tr><td><strong>비밀번호 암호화</strong></td><td>Firebase Authentication을 통해 암호화 저장</td></tr>
+      <tr><td><strong>API 키 보호</strong></td><td>서버(Firebase Cloud Functions) 환경변수에서만 관리</td></tr>
+      <tr><td><strong>통신 암호화</strong></td><td>HTTPS/TLS를 통한 데이터 송수신 암호화</td></tr>
+      <tr><td><strong>접근 권한 최소화</strong></td><td>Firebase Security Rules로 본인 데이터만 접근 가능</td></tr>
+    </tbody></table>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">9</div><h2>만 14세 미만 아동의 개인정보</h2></div>
+    <div class="warning-box">⚠️ TripCanvas는 만 14세 미만 아동의 회원가입을 허용하지 않습니다.</div>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">10</div><h2>개인정보 보호책임자 및 연락처</h2></div>
+    <div class="contact-card">
+      <h3 style="font-family:'Libre Baskerville',serif;font-size:15px;color:var(--accent);margin-bottom:14px;">📮 개인정보 보호책임자</h3>
+      <div class="contact-row"><span class="label">성  명</span><span>Muscus Park</span></div>
+      <div class="contact-row"><span class="label">이메일</span><span>pjhtube@gmail.com</span></div>
+      <div class="contact-row"><span class="label">서비스명</span><span>TripCanvas</span></div>
+      <div class="contact-row"><span class="label">처리 기간</span><span>문의 접수 후 영업일 기준 3일 이내 답변</span></div>
+    </div>
+    <div class="info-box" style="margin-top:14px;font-size:12.5px;">
+      • 개인정보 침해신고센터: privacy.kisa.or.kr / 국번 없이 118<br/>
+      • 대검찰청 사이버범죄수사단: www.spo.go.kr / 02-3480-3571<br/>
+      • 경찰청 사이버안전국: cyberbureau.police.go.kr / 국번 없이 182<br/><br/>
+      서비스 문의: pjhtube@gmail.com
+    </div>
+  </section>
+  <section>
+    <div class="section-header"><div class="section-num">11</div><h2>개인정보처리방침의 변경</h2></div>
+    <div class="info-box">본 방침은 <strong>2026년 3월 14일</strong>부터 시행됩니다. 변경 시 앱 내 공지사항을 통해 7일 전 안내합니다.</div>
+  </section>
+</div>
+<footer>
+  <strong>TripCanvas</strong> — 나만의 여행을 그리다 ✈️<br/>
+  본 개인정보처리방침은 <strong>2026년 3월 14일</strong>부터 시행됩니다.<br/>
+  문의: pjhtube@gmail.com
+</footer>
+</body>
+</html>
